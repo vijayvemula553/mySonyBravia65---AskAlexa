@@ -1,0 +1,350 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "t. v.",
+            "intents": [
+                {
+                    "name": "PowerOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "turn on",
+                        "wake up",
+                        "switch on"
+                    ]
+                },
+                {
+                    "name": "PowerOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "switch off",
+                        "turn off",
+                        "close"
+                    ]
+                },
+                {
+                    "name": "MenuIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "NetflixIntent",
+                    "slots": [],
+                    "samples": [
+                        "go to netflix",
+                        "open netflix",
+                        "play netflix",
+                        "show netflix"
+                    ]
+                },
+                {
+                    "name": "ConfirmIntent",
+                    "slots": [],
+                    "samples": [
+                        "Press Enter",
+                        "Enter",
+                        "Select",
+                        "Press Select",
+                        "Confirm",
+                        "Press Confirm",
+                        "Ok",
+                        "Press Ok"
+                    ]
+                },
+                {
+                    "name": "GGuideIntent",
+                    "slots": [],
+                    "samples": [
+                        "Guide",
+                        "TV Guide",
+                        "Go to Guide",
+                        "View the Guide",
+                        "Show me the TV Guide"
+                    ]
+                },
+                {
+                    "name": "InputIntent",
+                    "slots": [],
+                    "samples": [
+                        "Change The Source",
+                        "source",
+                        "Toggle Input",
+                        "change the input",
+                        "switch input",
+                        "switch source"
+                    ]
+                },
+                {
+                    "name": "ReturnIntent",
+                    "slots": [],
+                    "samples": [
+                        "go back",
+                        "back",
+                        "return",
+                        "return to previous menu",
+                        "go back to previous menu",
+                        "back menu"
+                    ]
+                },
+                {
+                    "name": "SubTitleIntent",
+                    "slots": [],
+                    "samples": [
+                        "Subtitles",
+                        "Subtitles On",
+                        "Subtitles Off",
+                        "Subtitles toggle"
+                    ]
+                },
+                {
+                    "name": "NumberIntent",
+                    "slots": [
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "press number {Number}",
+                        "go to channel {Number}",
+                        "channel {Number}"
+                    ]
+                },
+                {
+                    "name": "VolumeIntent",
+                    "slots": [
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Direction",
+                            "type": "DIRECTIONS"
+                        }
+                    ],
+                    "samples": [
+                        "Volume {Direction}",
+                        "Volume {Direction} {Number}",
+                        "turn the Volume {Direction} {Number}",
+                        "change the Volume {Direction} {Number}"
+                    ]
+                },
+                {
+                    "name": "MoveIntent",
+                    "slots": [
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Direction",
+                            "type": "DIRECTIONS"
+                        }
+                    ],
+                    "samples": [
+                        "move {Direction}",
+                        "go {Direction}",
+                        "{Direction} {Number}",
+                        "{Direction} {Number}",
+                        "move {Direction} {Number}",
+                        "go {Direction} {Number}",
+                        "move {Direction} {Number} spaces",
+                        "go {Direction} {Number} spaces",
+                        "{Number} {Direction}",
+                        "{Number} {Direction}",
+                        "move {Number} {Direction}",
+                        "go {Number} {Direction}",
+                        "move {Number} spaces {Direction}",
+                        "go {Number} spaces {Direction}"
+                    ]
+                },
+                {
+                    "name": "HdmiIntent",
+                    "slots": [
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "HD {Number}",
+                        "HDMI {Number}",
+                        "go to HDMI {Number}",
+                        "change to HDMI {Number}",
+                        "go to HD {Number}",
+                        "change to HD {Number}",
+                        "switch to HDMI {Number}",
+                        "switch to HD {Number}"
+                    ]
+                },
+                {
+                    "name": "VideoIntent",
+                    "slots": [
+                        {
+                            "name": "Number",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "AV {Number}",
+                        "go to AV {Number}",
+                        "change to AV {Number}",
+                        "switch to AV {Number}",
+                        "go to AV {Number}",
+                        "Video {Number}",
+                        "go to Video {Number}",
+                        "change to Video {Number}",
+                        "switch to Video {Number}",
+                        "go to Video {Number}"
+                    ]
+                },
+                {
+                    "name": "ButtonIntent",
+                    "slots": [
+                        {
+                            "name": "Button",
+                            "type": "BUTTONS"
+                        }
+                    ],
+                    "samples": [
+                        "{Button}",
+                        "press {Button}",
+                        "change {Button}",
+                        "go {Button}",
+                        "move {Button}",
+                        "go to {Button}",
+                        "view {Button}",
+                        "fast {Button}",
+                        "click {Button}"
+                    ]
+                },
+                {
+                    "name": "ChannelIntent",
+                    "slots": [
+                        {
+                            "name": "Direction",
+                            "type": "DIRECTIONS"
+                        }
+                    ],
+                    "samples": [
+                        "Channel {Direction}",
+                        "Go {Direction} a Channel",
+                        "Change the channel {Direction}",
+                        "Move {Direction} a channel"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "BUTTONS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yellow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Options"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mute"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pause"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Play"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Next"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rewind"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Forward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Prev"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Return"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Input"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Home"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DIRECTIONS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Right"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
